@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/Neuroonline/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist" // <-- Add this line
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1", // Version might differ slightly
     "vite": "^5.0.0"
   },
   "dependencies": {
